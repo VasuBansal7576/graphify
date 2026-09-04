@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "id": "loader",
+      "label": "loader.ts",
+      "file_type": "code",
+      "source_file": "loader.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "loader_load",
+      "label": "load()",
+      "file_type": "code",
+      "source_file": "loader.ts",
+      "source_location": "L1",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "external_package",
+      "label": "external-package",
+      "file_type": "code",
+      "source_file": "",
+      "confidence": "EXTRACTED",
+      "_origin": "ast"
+    },
+    {
+      "id": "other",
+      "label": "other.ts",
+      "file_type": "code",
+      "source_file": "other.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "other_other",
+      "label": "other()",
+      "file_type": "code",
+      "source_file": "other.ts",
+      "source_location": "L1",
+      "_callable": true,
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "loader",
+      "target": "loader_load",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "loader.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "loader_load",
+      "target": "ref_external_package",
+      "relation": "imports_from",
+      "context": "import",
+      "deferred": true,
+      "confidence": "EXTRACTED",
+      "source_file": "loader.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "loader",
+      "target": "external_package",
+      "relation": "dynamic_import",
+      "confidence": "EXTRACTED",
+      "source_file": "loader.ts",
+      "_origin": "ast"
+    },
+    {
+      "source": "other",
+      "target": "other_other",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "other.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

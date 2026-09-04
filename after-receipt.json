@@ -1,0 +1,19 @@
+{
+  "commit": "7818da95b5db095bdf87d55b6418015c6d6e2dcc",
+  "observations": [
+    {
+      "run": "fresh",
+      "nodes": 5,
+      "edges": 4,
+      "stdout": "[graphify extract] scanning <workspace>/corpus\n[graphify extract] found 2 code, 0 docs, 0 papers, 0 images\n[graphify extract] AST extraction on 2 code files...\n[graphify extract] wrote <workspace>/result/graphify-out/graph.json \u2014 5 nodes, 4 edges (no clustering)\n",
+      "stderr": ""
+    },
+    {
+      "run": "unchanged",
+      "nodes": 5,
+      "edges": 4,
+      "stdout": "[graphify extract] incremental scan of <workspace>/corpus\n[graphify extract] 0 code, 0 docs, 0 papers, 0 images changed; 2 unchanged; 0 deleted\n[graphify extract] no incremental changes detected (--no-cluster); outputs left untouched.\n",
+      "stderr": ""
+    }
+  ]
+}
