@@ -1,0 +1,38 @@
+{
+  "base_revision": "937e59a5476fcb2665d6c4f4b7c0d0a4142011b6",
+  "mode": "actual CLI extract --code-only --no-cluster --max-workers 1",
+  "results": {
+    "before": {
+      "sha256": "92f26c0da640d411b343c4b96da2bb40da63e43cac2c6c10b4935b86cb2228d2",
+      "nodes": 4,
+      "edges": 7,
+      "missing_target_edges": [
+        {
+          "source": "api",
+          "target": "bridge_value",
+          "relation": "re_exports",
+          "context": "re-export",
+          "confidence": "EXTRACTED",
+          "source_file": "api.ts",
+          "source_location": "L1",
+          "weight": 1.0,
+          "_origin": "ast"
+        }
+      ]
+    },
+    "after": {
+      "sha256": "528857aa8114bf016bef669524f3ccf750fb523897189cfea16dc69e5ec1b9ac",
+      "nodes": 4,
+      "edges": 7,
+      "missing_target_edges": []
+    }
+  },
+  "source_sha256": {
+    "base.ts": "4074552a29564124d8b46925f9a3e68e417a5599d5f85072c782abd4456724f0",
+    "api.ts": "08f14f598437cb4173492cf2c462a7986b8213e322d4a23b2f318239836c5f45",
+    "bridge.ts": "9ec132405df69eaf2a0e84cde96c53b4b9ae475b16f929bb2fe126d387f26729"
+  },
+  "provenance": "Intermediate target_file is repointed to defining file for disambiguation; persisted raw graph strips it. Source site unchanged.",
+  "visual": "Pillow offline raw-graph audit, not browser/Graphify viewer capture.",
+  "candidate_commit": "08dd8c1"
+}

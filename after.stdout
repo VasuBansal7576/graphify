@@ -1,0 +1,4 @@
+[graphify extract] scanning /private/tmp/graphify-forwarding-evidence/source
+[graphify extract] found 3 code, 0 docs, 0 papers, 0 images
+[graphify extract] AST extraction on 3 code files...
+[graphify extract] wrote /private/tmp/graphify-forwarding-evidence/after/graphify-out/graph.json — 4 nodes, 7 edges (no clustering)
