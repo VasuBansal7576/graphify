@@ -1,0 +1,96 @@
+{
+  "base_revision": "937e59a5476fcb2665d6c4f4b7c0d0a4142011b6",
+  "results": {
+    "before": {
+      "exit_code": 0,
+      "command": [
+        "/Users/vasu/Desktop/Unknowns/graphify-investigation/source/.venv/bin/python",
+        "-m",
+        "graphify",
+        "extract",
+        "/private/tmp/graphify-owned-evidence/source",
+        "--code-only",
+        "--no-cluster",
+        "--max-workers",
+        "1",
+        "--out",
+        "/private/tmp/graphify-owned-evidence/before"
+      ],
+      "sha256": "9fb6561f39ac5e27b635efa653208c4f475c6c28a32636b3ec4f7f87f98a717c",
+      "nodes": 12,
+      "edges": 24,
+      "missing_source_edges": [
+        {
+          "source": "nested_hidden",
+          "target": "base_base",
+          "relation": "inherits",
+          "context": "type",
+          "confidence": "EXTRACTED",
+          "source_file": "nested.ts",
+          "source_location": "L2",
+          "weight": 1.0,
+          "_origin": "ast"
+        },
+        {
+          "source": "nested_hidden_method",
+          "target": "base_result",
+          "relation": "references",
+          "context": "return_type",
+          "confidence": "EXTRACTED",
+          "source_file": "nested.ts",
+          "source_location": "L2",
+          "weight": 1.0,
+          "_origin": "ast"
+        }
+      ],
+      "visible_method_reference": [
+        {
+          "source": "nested_visible_method",
+          "target": "base_result",
+          "relation": "references",
+          "context": "return_type",
+          "confidence": "EXTRACTED",
+          "source_file": "nested.ts",
+          "source_location": "L3",
+          "weight": 1.0,
+          "_origin": "ast"
+        }
+      ]
+    },
+    "after": {
+      "exit_code": 0,
+      "command": [
+        "/Users/vasu/Desktop/Unknowns/graphify-investigation/source/.venv/bin/python",
+        "-m",
+        "graphify",
+        "extract",
+        "/private/tmp/graphify-owned-evidence/source",
+        "--code-only",
+        "--no-cluster",
+        "--max-workers",
+        "1",
+        "--out",
+        "/private/tmp/graphify-owned-evidence/after"
+      ],
+      "sha256": "d97ed0f9bb04f5980079da142ec134eff01a325a6c06c289940e65d84af35aa0",
+      "nodes": 12,
+      "edges": 22,
+      "missing_source_edges": [],
+      "visible_method_reference": [
+        {
+          "source": "nested_visible_method",
+          "target": "base_result",
+          "relation": "references",
+          "context": "return_type",
+          "confidence": "EXTRACTED",
+          "source_file": "nested.ts",
+          "source_location": "L3",
+          "weight": 1.0,
+          "_origin": "ast"
+        }
+      ]
+    }
+  },
+  "after_revision": "dcd9a7ee2d546fbc56168e3e536a6bae36ac7eac",
+  "resolution_sha256": "e0796a7b3c0ba0d1ea2edc41cba683f4731212687f5bc5d273779d02b8e14bb6"
+}

@@ -1,0 +1,350 @@
+{
+  "nodes": [
+    {
+      "id": "barrel",
+      "label": "barrel.ts",
+      "file_type": "code",
+      "source_file": "barrel.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "base",
+      "label": "base.ts",
+      "file_type": "code",
+      "source_file": "base.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "base_base",
+      "label": "Base",
+      "file_type": "code",
+      "source_file": "base.ts",
+      "source_location": "L1",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "base_base_method",
+      "label": ".method()",
+      "file_type": "code",
+      "source_file": "base.ts",
+      "source_location": "L1",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "base_result",
+      "label": "Result",
+      "file_type": "code",
+      "source_file": "base.ts",
+      "source_location": "L2",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "base_value",
+      "label": "VALUE",
+      "file_type": "code",
+      "source_file": "base.ts",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "caller",
+      "label": "caller.ts",
+      "file_type": "code",
+      "source_file": "caller.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "caller_caller",
+      "label": "caller()",
+      "file_type": "code",
+      "source_file": "caller.ts",
+      "source_location": "L2",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "nested",
+      "label": "nested.ts",
+      "file_type": "code",
+      "source_file": "nested.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "nested_factory",
+      "label": "factory()",
+      "file_type": "code",
+      "source_file": "nested.ts",
+      "source_location": "L2",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "nested_visible",
+      "label": "Visible",
+      "file_type": "code",
+      "source_file": "nested.ts",
+      "source_location": "L3",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "nested_visible_method",
+      "label": ".method()",
+      "file_type": "code",
+      "source_file": "nested.ts",
+      "source_location": "L3",
+      "_callable": true,
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "barrel",
+      "target": "base",
+      "relation": "imports_from",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "barrel.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "barrel",
+      "target": "base_base",
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "barrel.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "barrel",
+      "target": "base_value",
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "barrel.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "type_only": true,
+      "source": "barrel",
+      "target": "base_result",
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "barrel.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "base",
+      "target": "base_base",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "base.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "base_base",
+      "target": "base_base_method",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "base.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "base",
+      "target": "base_result",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "base.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "base",
+      "target": "base_value",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "base.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "caller",
+      "target": "barrel",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "caller.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "caller",
+      "target": "base_base",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "caller.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "caller",
+      "target": "base_value",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "caller.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "caller",
+      "target": "base_result",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "caller.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "caller",
+      "target": "caller_caller",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "caller.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "nested",
+      "target": "base",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "nested.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "nested",
+      "target": "base_base",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "nested.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "nested",
+      "target": "base_result",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "nested.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "nested",
+      "target": "nested_factory",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nested.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "nested",
+      "target": "nested_visible",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nested.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "nested_visible",
+      "target": "nested_visible_method",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "nested.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "barrel",
+      "target": "base",
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "barrel.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "nested_visible",
+      "target": "base_base",
+      "relation": "inherits",
+      "context": "type",
+      "confidence": "EXTRACTED",
+      "source_file": "nested.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "nested_visible_method",
+      "target": "base_result",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "nested.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
