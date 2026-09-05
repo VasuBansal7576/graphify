@@ -1,0 +1,25 @@
+{
+  "source_state": "same final 15-file OpenWiki source state after rename/delete/import rewire",
+  "before_commit": "33362d969292b57eda82f3fbd9eb5f3f5bc9bbc2",
+  "after_commit": "ddab7f0cbac978de4b841a01bccb62d1532686cf",
+  "before": {
+    "nodes": 197,
+    "edges": 575
+  },
+  "after": {
+    "nodes": 197,
+    "edges": 575
+  },
+  "node_ids_same": true,
+  "edges_same": true,
+  "labels": {
+    "src_generation_errors": {
+      "before": "errors.ts",
+      "after": "generation/errors.ts"
+    },
+    "src_integrations_core_errors": {
+      "before": "errors.ts",
+      "after": "core/errors.ts"
+    }
+  }
+}
