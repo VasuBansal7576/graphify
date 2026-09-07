@@ -1,0 +1,62 @@
+[
+  {
+    "repo": "next.js",
+    "commit": "4fed8eaf197aaa60fd85371352482199a4c2107f",
+    "files": 23909,
+    "mib": 80.2726182937622,
+    "largest": [
+      [
+        2582707,
+        "packages/next/src/compiled/webpack/bundle5.js"
+      ],
+      [
+        2158740,
+        "turbopack/crates/turbopack-ecmascript/tests/benches/packages-bundle.js"
+      ],
+      [
+        1540081,
+        "packages/next/src/compiled/babel-packages/packages-bundle.js"
+      ]
+    ]
+  },
+  {
+    "repo": "vscode",
+    "commit": "58ae40949a5eb73be966817b724c1c89ffce325d",
+    "files": 13458,
+    "mib": 158.89300441741943,
+    "largest": [
+      [
+        8388704,
+        "extensions/vscode-colorize-perf-tests/test/colorize-fixtures/test-checker.ts"
+      ],
+      [
+        1377561,
+        "src/vs/workbench/api/test/browser/extHostDocumentData.test.perf-data.ts"
+      ],
+      [
+        742177,
+        "src/vscode-dts/vscode.d.ts"
+      ]
+    ]
+  },
+  {
+    "repo": "webpack",
+    "commit": "92c4650306089e371f4fc89a32c718da7a542151",
+    "files": 15273,
+    "mib": 20.298372268676758,
+    "largest": [
+      [
+        811857,
+        "types.d.ts"
+      ],
+      [
+        675135,
+        "lib/css/syntax.js"
+      ],
+      [
+        531333,
+        "lib/html/syntax.js"
+      ]
+    ]
+  }
+]

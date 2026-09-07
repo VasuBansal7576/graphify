@@ -1,0 +1,23 @@
+[
+  [
+    "test/development/app-dir/hmr-symlink/app/symlink-chain/page.tsx",
+    "test/development/app-dir/hmr-symlink/app/symlink-link/page.tsx",
+    "test/development/app-dir/hmr-symlink/app/symlink-target/page.tsx"
+  ],
+  [
+    "test/production/app-dir/symbolic-links/src/app/file-symlink/page.tsx",
+    "test/production/app-dir/symbolic-links/src/somewhere-else/src/app/file-symlink/page.tsx"
+  ],
+  [
+    "test/production/app-dir/symbolic-links/src/i18n.ts",
+    "test/production/app-dir/symbolic-links/src/somewhere-else/src/i18n.ts"
+  ],
+  [
+    "turbopack/crates/turbopack-tracing/tests/node-file-trace/integration/symlink-to-file/linked.js",
+    "turbopack/crates/turbopack-tracing/tests/node-file-trace/integration/symlink-to-file/real.js"
+  ],
+  [
+    "turbopack/crates/turbopack-tracing/tests/node-file-trace/test/unit/require-symlink-subdir/input.js",
+    "turbopack/crates/turbopack-tracing/tests/node-file-trace/test/unit/require-symlink-subdir/subdir/input.js"
+  ]
+]

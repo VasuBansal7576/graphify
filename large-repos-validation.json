@@ -1,0 +1,348 @@
+{
+  "created_utc": "2026-09-07T07:22:28.326354+00:00",
+  "pr": "https://github.com/Graphify-Labs/graphify/pull/3353",
+  "pr_head": "c2a86672aef552059bb6bb620102cbd181a3e38b",
+  "baseline": "c9f99018774e2e0380e9f65b3959944559a0d5f6",
+  "candidate": "5138d13dad082da1a84f005917cf925dbe44478c",
+  "total_measurements": 36,
+  "total_pairs": 18,
+  "all_ordered_outputs_equal": true,
+  "all_reported_failed_sources_empty": true,
+  "all_source_and_code_checkouts_clean": true,
+  "benchmark_script_sha256": "e4ba7d5746e0373d7cc040608ff18d72b68bee5a6e0ba2ba4882a531893c69db",
+  "workloads": [
+    {
+      "repo": "webpack",
+      "source_commit": "92c4650306089e371f4fc89a32c718da7a542151",
+      "eligible_files": 15273,
+      "source_mib": 20.298372268676758,
+      "mode": "facts",
+      "pairs": 3,
+      "summary": {
+        "baseline": {
+          "elapsed_seconds": {
+            "median": 7.721408333047293,
+            "min": 7.552999624982476,
+            "max": 7.743379084044136
+          },
+          "peak_rss_mib": {
+            "median": 1097.359375,
+            "min": 1091.890625,
+            "max": 1097.46875
+          }
+        },
+        "candidate": {
+          "elapsed_seconds": {
+            "median": 5.3049771670484915,
+            "min": 5.300816500093788,
+            "max": 5.456976999994367
+          },
+          "peak_rss_mib": {
+            "median": 150.828125,
+            "min": 150.8125,
+            "max": 150.90625
+          }
+        }
+      },
+      "time_reduction_percent": 31.2952127613376,
+      "rss_reduction_percent": 86.25535732084121,
+      "counts": {
+        "declarations": 3601,
+        "imports": 3618,
+        "aliases": 3877,
+        "exports": 5126,
+        "star_exports": 349,
+        "namespace_exports": 48,
+        "uses": 15952,
+        "module_imports": 0
+      },
+      "output_sha256": "2bc782ea885e9724a2f57d0bfff7a0e30521dca9d6d80070bce21a37a0ebef9e",
+      "duplicate_resolved_path_groups": [],
+      "receipt": "large-webpack-facts.json",
+      "receipt_sha256": "969bca7558a8ca634696c7461476c5402dedd1832158714630a9f35b298291df"
+    },
+    {
+      "repo": "webpack",
+      "source_commit": "92c4650306089e371f4fc89a32c718da7a542151",
+      "eligible_files": 15273,
+      "source_mib": 20.298372268676758,
+      "mode": "graph",
+      "pairs": 3,
+      "summary": {
+        "baseline": {
+          "elapsed_seconds": {
+            "median": 29.99263612506911,
+            "min": 25.23104570794385,
+            "max": 30.590767416055314
+          },
+          "peak_rss_mib": {
+            "median": 1166.6875,
+            "min": 1161.6875,
+            "max": 1201.25
+          }
+        },
+        "candidate": {
+          "elapsed_seconds": {
+            "median": 26.875855208025314,
+            "min": 25.31324854202103,
+            "max": 28.11389187502209
+          },
+          "peak_rss_mib": {
+            "median": 279.15625,
+            "min": 278.75,
+            "max": 281.109375
+          }
+        }
+      },
+      "time_reduction_percent": 10.391820525701178,
+      "rss_reduction_percent": 76.07274870091605,
+      "counts": {
+        "nodes": 42655,
+        "edges": 56495
+      },
+      "output_sha256": "243c09fdefc67e31444524e094964e7c5033f953e16c0bac984b647e2406403b",
+      "duplicate_resolved_path_groups": [],
+      "receipt": "large-webpack-graph.json",
+      "receipt_sha256": "d59de31866d0c832704cc038317ea41690f54e8eb6c26bd1b2cf366d290d5e6a"
+    },
+    {
+      "repo": "next.js",
+      "source_commit": "4fed8eaf197aaa60fd85371352482199a4c2107f",
+      "eligible_files": 23909,
+      "source_mib": 80.2726182937622,
+      "mode": "facts",
+      "pairs": 3,
+      "summary": {
+        "baseline": {
+          "elapsed_seconds": {
+            "median": 48.33077908307314,
+            "min": 47.71600720891729,
+            "max": 51.14137320895679
+          },
+          "peak_rss_mib": {
+            "median": 3030.796875,
+            "min": 2864.609375,
+            "max": 3568.0625
+          }
+        },
+        "candidate": {
+          "elapsed_seconds": {
+            "median": 31.540976208052598,
+            "min": 30.872966041904874,
+            "max": 31.997740083024837
+          },
+          "peak_rss_mib": {
+            "median": 3219.328125,
+            "min": 3187.109375,
+            "max": 3539.109375
+          }
+        }
+      },
+      "time_reduction_percent": 34.73935904521933,
+      "rss_reduction_percent": -6.220517500038669,
+      "counts": {
+        "declarations": 22603,
+        "imports": 26361,
+        "aliases": 6682,
+        "exports": 35313,
+        "star_exports": 183,
+        "namespace_exports": 28,
+        "uses": 55320,
+        "module_imports": 0
+      },
+      "output_sha256": "5e01e189e3bda1e78f8bec871c7f47f9fb8f4fcb5af132cf61433ccc4812b310",
+      "duplicate_resolved_path_groups": [
+        [
+          "test/development/app-dir/hmr-symlink/app/symlink-chain/page.tsx",
+          "test/development/app-dir/hmr-symlink/app/symlink-link/page.tsx",
+          "test/development/app-dir/hmr-symlink/app/symlink-target/page.tsx"
+        ],
+        [
+          "test/production/app-dir/symbolic-links/src/app/file-symlink/page.tsx",
+          "test/production/app-dir/symbolic-links/src/somewhere-else/src/app/file-symlink/page.tsx"
+        ],
+        [
+          "test/production/app-dir/symbolic-links/src/i18n.ts",
+          "test/production/app-dir/symbolic-links/src/somewhere-else/src/i18n.ts"
+        ],
+        [
+          "turbopack/crates/turbopack-tracing/tests/node-file-trace/integration/symlink-to-file/linked.js",
+          "turbopack/crates/turbopack-tracing/tests/node-file-trace/integration/symlink-to-file/real.js"
+        ],
+        [
+          "turbopack/crates/turbopack-tracing/tests/node-file-trace/test/unit/require-symlink-subdir/input.js",
+          "turbopack/crates/turbopack-tracing/tests/node-file-trace/test/unit/require-symlink-subdir/subdir/input.js"
+        ]
+      ],
+      "receipt": "large-next.js-facts.json",
+      "receipt_sha256": "603ace7092f34f28a370c1097e6fbdc1775c9311c771317fc4a8a514ce252cb4"
+    },
+    {
+      "repo": "next.js",
+      "source_commit": "4fed8eaf197aaa60fd85371352482199a4c2107f",
+      "eligible_files": 23909,
+      "source_mib": 80.2726182937622,
+      "mode": "graph",
+      "pairs": 3,
+      "summary": {
+        "baseline": {
+          "elapsed_seconds": {
+            "median": 137.57230387500022,
+            "min": 135.58223858301062,
+            "max": 146.14123370905872
+          },
+          "peak_rss_mib": {
+            "median": 3515.078125,
+            "min": 3146.953125,
+            "max": 3534.25
+          }
+        },
+        "candidate": {
+          "elapsed_seconds": {
+            "median": 114.11218462500256,
+            "min": 112.4504402918974,
+            "max": 115.06286583305337
+          },
+          "peak_rss_mib": {
+            "median": 3604.59375,
+            "min": 3587.84375,
+            "max": 3626.53125
+          }
+        }
+      },
+      "time_reduction_percent": 17.052937683818826,
+      "rss_reduction_percent": -2.5466183628564343,
+      "counts": {
+        "nodes": 120345,
+        "edges": 270285
+      },
+      "output_sha256": "5c2870c9d62819ddb27613d1fb0acd81bd95f7367b0e67746b832547c6a078d2",
+      "duplicate_resolved_path_groups": [
+        [
+          "test/development/app-dir/hmr-symlink/app/symlink-chain/page.tsx",
+          "test/development/app-dir/hmr-symlink/app/symlink-link/page.tsx",
+          "test/development/app-dir/hmr-symlink/app/symlink-target/page.tsx"
+        ],
+        [
+          "test/production/app-dir/symbolic-links/src/app/file-symlink/page.tsx",
+          "test/production/app-dir/symbolic-links/src/somewhere-else/src/app/file-symlink/page.tsx"
+        ],
+        [
+          "test/production/app-dir/symbolic-links/src/i18n.ts",
+          "test/production/app-dir/symbolic-links/src/somewhere-else/src/i18n.ts"
+        ],
+        [
+          "turbopack/crates/turbopack-tracing/tests/node-file-trace/integration/symlink-to-file/linked.js",
+          "turbopack/crates/turbopack-tracing/tests/node-file-trace/integration/symlink-to-file/real.js"
+        ],
+        [
+          "turbopack/crates/turbopack-tracing/tests/node-file-trace/test/unit/require-symlink-subdir/input.js",
+          "turbopack/crates/turbopack-tracing/tests/node-file-trace/test/unit/require-symlink-subdir/subdir/input.js"
+        ]
+      ],
+      "receipt": "large-next.js-graph.json",
+      "receipt_sha256": "e18a9fc49a8ef4f357849dcb11e8e04ffbc7a0922a3afc863a7422d6ee92931a"
+    },
+    {
+      "repo": "vscode",
+      "source_commit": "58ae40949a5eb73be966817b724c1c89ffce325d",
+      "eligible_files": 13458,
+      "source_mib": 158.89300441741943,
+      "mode": "facts",
+      "pairs": 3,
+      "summary": {
+        "baseline": {
+          "elapsed_seconds": {
+            "median": 92.08965529198758,
+            "min": 86.65993433294352,
+            "max": 95.84506079100538
+          },
+          "peak_rss_mib": {
+            "median": 4029.6875,
+            "min": 3735.59375,
+            "max": 5029.125
+          }
+        },
+        "candidate": {
+          "elapsed_seconds": {
+            "median": 47.4678029170027,
+            "min": 44.26168295799289,
+            "max": 49.74659162503667
+          },
+          "peak_rss_mib": {
+            "median": 488.6875,
+            "min": 487.109375,
+            "max": 488.765625
+          }
+        }
+      },
+      "time_reduction_percent": 48.454793574265096,
+      "rss_reduction_percent": 87.8728189220628,
+      "counts": {
+        "declarations": 43985,
+        "imports": 196088,
+        "aliases": 3833,
+        "exports": 46081,
+        "star_exports": 98,
+        "namespace_exports": 2,
+        "uses": 277383,
+        "module_imports": 0
+      },
+      "output_sha256": "278dcc57eba2b7d116f1ff7303069f1aeb06846781656dece647017b3e77b3f2",
+      "duplicate_resolved_path_groups": [],
+      "receipt": "large-vscode-facts.json",
+      "receipt_sha256": "758fc79932a5c956135fa2b07f830a0d95aaa61b9dc0f976747786c8fc27f057"
+    },
+    {
+      "repo": "vscode",
+      "source_commit": "58ae40949a5eb73be966817b724c1c89ffce325d",
+      "eligible_files": 13458,
+      "source_mib": 158.89300441741943,
+      "mode": "graph",
+      "pairs": 3,
+      "summary": {
+        "baseline": {
+          "elapsed_seconds": {
+            "median": 304.3831253340468,
+            "min": 293.96068079106044,
+            "max": 306.7484846250154
+          },
+          "peak_rss_mib": {
+            "median": 4326.21875,
+            "min": 4108.921875,
+            "max": 4403.140625
+          }
+        },
+        "candidate": {
+          "elapsed_seconds": {
+            "median": 250.81601837498602,
+            "min": 244.742978042108,
+            "max": 252.55813829100225
+          },
+          "peak_rss_mib": {
+            "median": 1812.34375,
+            "min": 1806.890625,
+            "max": 1812.515625
+          }
+        }
+      },
+      "time_reduction_percent": 17.598579717674323,
+      "rss_reduction_percent": 58.10790311978561,
+      "counts": {
+        "nodes": 223509,
+        "edges": 865391
+      },
+      "output_sha256": "d74bc49943a2a7f7c6c1f9caa4d4eb8c305385167ffd956155be9840a44be88e",
+      "duplicate_resolved_path_groups": [],
+      "receipt": "large-vscode-graph.json",
+      "receipt_sha256": "fbae42a6fa7ac33bc05d0880f262bec9328373278637d504ff96bb45879fef48"
+    }
+  ],
+  "limits": [
+    "All tracked eligible JS/TS-family files, including fixtures, generated bundles, and eligible symlinks. Not all-language repository extraction or full CLI timings.",
+    "Fresh processes, three alternating before/after pairs, same Python environment and source commit, graph extraction max_workers=2, fresh empty extraction cache per run.",
+    "Filesystem caches are not flushed and desktop load is uncontrolled. Medians and ranges are descriptive, not statistical guarantees.",
+    "Peak RSS is parent-process high-water before output serialization; graph measurements exclude worker processes.",
+    "Next.js has five duplicate resolved-path groups, with six additional aliases; this triggers the whole-batch fallback. Its observed median RSS increases are not hidden."
+  ]
+}

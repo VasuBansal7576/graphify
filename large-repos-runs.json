@@ -1,0 +1,140 @@
+[
+  {
+    "name": "large-webpack-facts",
+    "command": [
+      "/private/tmp/graphify-pr3353-review/.venv/bin/python",
+      "/private/tmp/graphify-pr3353-review/scripts/benchmark_js_fact_collection.py",
+      "--baseline",
+      "/private/tmp/graphify-pr3353-current-base",
+      "--candidate",
+      "/private/tmp/graphify-pr3353-ci-merge",
+      "--source",
+      "/private/tmp/graphify-pr3353-large-repos/webpack",
+      "--files",
+      "0",
+      "--runs",
+      "3",
+      "--mode",
+      "facts",
+      "--output",
+      "/private/tmp/graphify-pr3353-evidence/large-webpack-facts.json"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 42.14824867248535
+  },
+  {
+    "name": "large-webpack-graph",
+    "command": [
+      "/private/tmp/graphify-pr3353-review/.venv/bin/python",
+      "/private/tmp/graphify-pr3353-review/scripts/benchmark_js_fact_collection.py",
+      "--baseline",
+      "/private/tmp/graphify-pr3353-current-base",
+      "--candidate",
+      "/private/tmp/graphify-pr3353-ci-merge",
+      "--source",
+      "/private/tmp/graphify-pr3353-large-repos/webpack",
+      "--files",
+      "0",
+      "--runs",
+      "3",
+      "--mode",
+      "graph",
+      "--output",
+      "/private/tmp/graphify-pr3353-evidence/large-webpack-graph.json"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 168.3122341632843
+  },
+  {
+    "name": "large-next.js-facts",
+    "command": [
+      "/private/tmp/graphify-pr3353-review/.venv/bin/python",
+      "/private/tmp/graphify-pr3353-review/scripts/benchmark_js_fact_collection.py",
+      "--baseline",
+      "/private/tmp/graphify-pr3353-current-base",
+      "--candidate",
+      "/private/tmp/graphify-pr3353-ci-merge",
+      "--source",
+      "/private/tmp/graphify-pr3353-large-repos/next.js",
+      "--files",
+      "0",
+      "--runs",
+      "3",
+      "--mode",
+      "facts",
+      "--output",
+      "/private/tmp/graphify-pr3353-evidence/large-next.js-facts.json"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 253.74404621124268
+  },
+  {
+    "name": "large-next.js-graph",
+    "command": [
+      "/private/tmp/graphify-pr3353-review/.venv/bin/python",
+      "/private/tmp/graphify-pr3353-review/scripts/benchmark_js_fact_collection.py",
+      "--baseline",
+      "/private/tmp/graphify-pr3353-current-base",
+      "--candidate",
+      "/private/tmp/graphify-pr3353-ci-merge",
+      "--source",
+      "/private/tmp/graphify-pr3353-large-repos/next.js",
+      "--files",
+      "0",
+      "--runs",
+      "3",
+      "--mode",
+      "graph",
+      "--output",
+      "/private/tmp/graphify-pr3353-evidence/large-next.js-graph.json"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 768.3181126117706
+  },
+  {
+    "name": "large-vscode-facts",
+    "command": [
+      "/private/tmp/graphify-pr3353-review/.venv/bin/python",
+      "/private/tmp/graphify-pr3353-review/scripts/benchmark_js_fact_collection.py",
+      "--baseline",
+      "/private/tmp/graphify-pr3353-current-base",
+      "--candidate",
+      "/private/tmp/graphify-pr3353-ci-merge",
+      "--source",
+      "/private/tmp/graphify-pr3353-large-repos/vscode",
+      "--files",
+      "0",
+      "--runs",
+      "3",
+      "--mode",
+      "facts",
+      "--output",
+      "/private/tmp/graphify-pr3353-evidence/large-vscode-facts.json"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 463.8006229400635
+  },
+  {
+    "name": "large-vscode-graph",
+    "command": [
+      "/private/tmp/graphify-pr3353-review/.venv/bin/python",
+      "/private/tmp/graphify-pr3353-review/scripts/benchmark_js_fact_collection.py",
+      "--baseline",
+      "/private/tmp/graphify-pr3353-current-base",
+      "--candidate",
+      "/private/tmp/graphify-pr3353-ci-merge",
+      "--source",
+      "/private/tmp/graphify-pr3353-large-repos/vscode",
+      "--files",
+      "0",
+      "--runs",
+      "3",
+      "--mode",
+      "graph",
+      "--output",
+      "/private/tmp/graphify-pr3353-evidence/large-vscode-graph.json"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 1665.3468079566956
+  }
+]
