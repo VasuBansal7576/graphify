@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-09-07T06:12:37.362176+00:00",
+  "pr": "https://github.com/Graphify-Labs/graphify/pull/3353",
+  "head_commit": "c2a86672aef552059bb6bb620102cbd181a3e38b",
+  "original_base_commit": "937e59a5476fcb2665d6c4f4b7c0d0a4142011b6",
+  "ci_base_commit": "c9f99018774e2e0380e9f65b3959944559a0d5f6",
+  "ci_merge_commit": "5138d13dad082da1a84f005917cf925dbe44478c",
+  "ci_run": "https://github.com/Graphify-Labs/graphify/actions/runs/34088979232",
+  "ci_jobs": {
+    "test (3.10)": {
+      "passed": 5443,
+      "skipped": 11
+    },
+    "test (3.12)": {
+      "passed": 5442,
+      "skipped": 12
+    },
+    "skillgen-check": "success",
+    "security-scan": "success with non-blocking scan findings"
+  },
+  "security_notes": "Bandit findings are outside the patch; pip-audit reports pip and setuptools build-tool advisories. Dependency specifications and these source sites were not changed by this PR. The workflow marks both scans continue-on-error.",
+  "local_linux": {
+    "platform": "Linux x86_64, Debian bookworm under Docker emulation on arm64 macOS",
+    "python3.12.12": {
+      "passed": 5369,
+      "skipped": 14,
+      "final_focused_tests_passed": 9
+    },
+    "python3.10.19": {
+      "passed": 5371,
+      "skipped": 13,
+      "final_focused_tests_passed": 9
+    }
+  },
+  "regression_negative_controls": {
+    "drop_alias_facts": "2 expected test failures",
+    "retain_native_descendant": "1 expected test failure",
+    "bypass_duplicate_fallback": "2 expected test failures",
+    "actual_937e59a_baseline_contract": "6 expected passing tests"
+  },
+  "lint": "Ruff passed for both changed files",
+  "graphify_update": "exit zero; local optional SQL, DM, Lisp and Robot grammar omissions reported; known Luau syntax-error fixture reported",
+  "benchmark_script_sha256": "e4ba7d5746e0373d7cc040608ff18d72b68bee5a6e0ba2ba4882a531893c69db",
+  "benchmark_lock_sha256": "cd9619377edfc6aea4941e6ed37302b9f5624a52fc005df6e6d10f22ec0a537c",
+  "benchmark_limits": [
+    "Fresh processes, fixed seeded samples, alternating arm order; filesystem caches are not flushed and desktop load is not controlled.",
+    "RSS is process high-water before output serialization. Graph-mode RSS excludes extraction worker processes.",
+    "These are fact-collection and library graph-extraction timings, not full CLI timings.",
+    "All sampled inputs resolve uniquely; duplicate resolved paths retain whole-batch tree lifetime.",
+    "Timing medians and ranges are descriptive, not statistical guarantees."
+  ]
+}
