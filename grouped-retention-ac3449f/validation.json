@@ -1,0 +1,282 @@
+{
+  "created_utc": "2026-09-08T04:39:13.371125+00:00",
+  "pr": "https://github.com/Graphify-Labs/graphify/pull/3353",
+  "head_commit": "ac3449f79e9d36a4bd59c5a7a6c11e8acbbfabf8",
+  "original_base_commit": "937e59a5476fcb2665d6c4f4b7c0d0a4142011b6",
+  "previous_pr_commit": "c2a86672aef552059bb6bb620102cbd181a3e38b",
+  "ci_upstream_base": "67f99bd0059dd1bac9e44382907ef9f10098b39f",
+  "ci_run": "https://github.com/Graphify-Labs/graphify/actions/runs/34187329977",
+  "ci_tests": {
+    "python3.10": {
+      "passed": 5490,
+      "skipped": 12
+    },
+    "python3.12": {
+      "passed": 5489,
+      "skipped": 13
+    }
+  },
+  "security": "The job passes under its existing continue-on-error policy. Bandit reports findings outside the patch, and pip-audit reports pip/setuptools build-tool advisories. Neither dependency specifications nor scan policies changed.",
+  "focused_tests_passed": 13,
+  "broader_js_ts_tests_passed": 156,
+  "independent_original_contract_cases_passed": 11,
+  "seeded_differential_cases": 200,
+  "differential_seed": 3353,
+  "negative_controls": [
+    "Original collector fails duplicate-group native lifetime test.",
+    "Reviewer injected root and descendant retention; each fails the new native lifetime test."
+  ],
+  "local_full_suite": {
+    "passed": 5244,
+    "skipped": 93,
+    "environment_failures": 12,
+    "environment_recheck": "After installing locked optional OpenAI dependency and enabling DNS/socket access, all 73 tests in affected files pass."
+  },
+  "other_checks": [
+    "All five generated-artifact checks pass.",
+    "Ruff and git diff --check pass.",
+    "graphify update . succeeds: 15259 nodes, 28384 edges.",
+    "Graphify CLI help succeeds."
+  ],
+  "benchmark_script_sha256": "e4ba7d5746e0373d7cc040608ff18d72b68bee5a6e0ba2ba4882a531893c69db",
+  "lock_sha256": "cd9619377edfc6aea4941e6ed37302b9f5624a52fc005df6e6d10f22ec0a537c",
+  "limits": [
+    "Benchmarks compare branch head with original PR base or previous PR head, not the separate newer upstream CI merge.",
+    "All tracked eligible JS/TS-family files are included, including symlink aliases and fixtures.",
+    "Fresh processes, alternating order, three pairs; graph extraction uses two workers and fresh empty extraction caches.",
+    "RSS is process high-water before output serialization; graph RSS excludes workers.",
+    "Filesystem caches are not flushed and shared desktop load is uncontrolled; timing ranges are descriptive.",
+    "These are library collector/extraction timings, not full CLI or all-language runs.",
+    "Native lifetime tests depend intentionally on CPython and tree-sitter ownership behavior; non-CPython runtimes skip these checks."
+  ],
+  "workloads": [
+    {
+      "repo": "next",
+      "mode": "facts",
+      "comparison": "previous",
+      "files": 23909,
+      "source_commit": "4fed8eaf197aaa60fd85371352482199a4c2107f",
+      "summary": {
+        "baseline": {
+          "elapsed_seconds": {
+            "median": 51.10843316698447,
+            "min": 37.583694708067924,
+            "max": 80.84232012496796
+          },
+          "peak_rss_mib": {
+            "median": 2503.578125,
+            "min": 2334.3125,
+            "max": 2983.171875
+          }
+        },
+        "candidate": {
+          "elapsed_seconds": {
+            "median": 31.461095541948453,
+            "min": 26.899490249925293,
+            "max": 33.69330845901277
+          },
+          "peak_rss_mib": {
+            "median": 379.71875,
+            "min": 379.671875,
+            "max": 379.8125
+          }
+        }
+      },
+      "counts": {
+        "declarations": 17651,
+        "imports": 26361,
+        "aliases": 6682,
+        "exports": 30361,
+        "star_exports": 183,
+        "namespace_exports": 28,
+        "uses": 55320,
+        "module_imports": 0
+      },
+      "receipt": "next-facts-vs-previous.json",
+      "receipt_sha256": "4152e9db8357efb4b06a959fdde5f731ea833454681e0c26b29c25db819bf12b",
+      "time_reduction_percent": 38.44245735501827,
+      "rss_reduction_percent": 84.83295782910709
+    },
+    {
+      "repo": "next",
+      "mode": "facts",
+      "comparison": "original",
+      "files": 23909,
+      "source_commit": "4fed8eaf197aaa60fd85371352482199a4c2107f",
+      "summary": {
+        "baseline": {
+          "elapsed_seconds": {
+            "median": 50.73388675006572,
+            "min": 48.33375358302146,
+            "max": 90.65965441707522
+          },
+          "peak_rss_mib": {
+            "median": 3886.25,
+            "min": 2375.578125,
+            "max": 3964.09375
+          }
+        },
+        "candidate": {
+          "elapsed_seconds": {
+            "median": 35.2076912909979,
+            "min": 28.0924839170184,
+            "max": 35.85595875000581
+          },
+          "peak_rss_mib": {
+            "median": 379.53125,
+            "min": 379.234375,
+            "max": 379.78125
+          }
+        }
+      },
+      "counts": {
+        "declarations": 17651,
+        "imports": 26361,
+        "aliases": 6682,
+        "exports": 30361,
+        "star_exports": 183,
+        "namespace_exports": 28,
+        "uses": 55320,
+        "module_imports": 0
+      },
+      "receipt": "next-facts-vs-original.json",
+      "receipt_sha256": "a1a7dbd3ba1e07efc539fc64520adfec75ad33d3d5eac038ae2b1e942fc9d664",
+      "time_reduction_percent": 30.603205182279293,
+      "rss_reduction_percent": 90.233998070119
+    },
+    {
+      "repo": "next",
+      "mode": "graph",
+      "comparison": "original",
+      "files": 23909,
+      "source_commit": "4fed8eaf197aaa60fd85371352482199a4c2107f",
+      "summary": {
+        "baseline": {
+          "elapsed_seconds": {
+            "median": 164.61467533407267,
+            "min": 142.77737145801075,
+            "max": 175.12458895903546
+          },
+          "peak_rss_mib": {
+            "median": 3031.671875,
+            "min": 2975.171875,
+            "max": 3540.859375
+          }
+        },
+        "candidate": {
+          "elapsed_seconds": {
+            "median": 133.36095083400141,
+            "min": 130.48014520900324,
+            "max": 133.5171048330376
+          },
+          "peak_rss_mib": {
+            "median": 760.953125,
+            "min": 736.71875,
+            "max": 768.109375
+          }
+        }
+      },
+      "counts": {
+        "nodes": 120129,
+        "edges": 270325
+      },
+      "receipt": "next-graph-vs-original.json",
+      "receipt_sha256": "60edb8904d4de1e9e9686cf38032d1a01b817b71e628edd58f08f481c958a010",
+      "time_reduction_percent": 18.98598921186355,
+      "rss_reduction_percent": 74.89988506754214
+    },
+    {
+      "repo": "webpack",
+      "mode": "facts",
+      "comparison": "original",
+      "files": 15273,
+      "source_commit": "92c4650306089e371f4fc89a32c718da7a542151",
+      "summary": {
+        "baseline": {
+          "elapsed_seconds": {
+            "median": 9.603713000076823,
+            "min": 9.528753666090779,
+            "max": 10.647728916956112
+          },
+          "peak_rss_mib": {
+            "median": 1087.609375,
+            "min": 1084.984375,
+            "max": 1095.375
+          }
+        },
+        "candidate": {
+          "elapsed_seconds": {
+            "median": 5.332582208095118,
+            "min": 5.261870500049554,
+            "max": 5.397217125049792
+          },
+          "peak_rss_mib": {
+            "median": 153.359375,
+            "min": 153.203125,
+            "max": 153.375
+          }
+        }
+      },
+      "counts": {
+        "declarations": 1083,
+        "imports": 3618,
+        "aliases": 3877,
+        "exports": 2608,
+        "star_exports": 349,
+        "namespace_exports": 48,
+        "uses": 15952,
+        "module_imports": 0
+      },
+      "receipt": "webpack-facts-vs-original.json",
+      "receipt_sha256": "d09463ef90cc01de07a5acc18b9580112c71ae7eca18db345f0c632d910113c2",
+      "time_reduction_percent": 44.473744602192276,
+      "rss_reduction_percent": 85.8994066688695
+    },
+    {
+      "repo": "webpack",
+      "mode": "graph",
+      "comparison": "original",
+      "files": 15273,
+      "source_commit": "92c4650306089e371f4fc89a32c718da7a542151",
+      "summary": {
+        "baseline": {
+          "elapsed_seconds": {
+            "median": 32.96607295807917,
+            "min": 32.86028487503063,
+            "max": 34.871527042007074
+          },
+          "peak_rss_mib": {
+            "median": 1160.359375,
+            "min": 1138.890625,
+            "max": 1160.421875
+          }
+        },
+        "candidate": {
+          "elapsed_seconds": {
+            "median": 30.382935374975204,
+            "min": 29.296824250021018,
+            "max": 30.68486912501976
+          },
+          "peak_rss_mib": {
+            "median": 267.265625,
+            "min": 267.078125,
+            "max": 269.28125
+          }
+        }
+      },
+      "counts": {
+        "nodes": 42133,
+        "edges": 56472
+      },
+      "receipt": "webpack-graph-vs-original.json",
+      "receipt_sha256": "732fc86b9c1b8bfbd1ed6cf65c47a1b6f3ee8dad5d69e6b27661b4d1378820f0",
+      "time_reduction_percent": 7.835745514452908,
+      "rss_reduction_percent": 76.96699567752448
+    }
+  ],
+  "total_measurements": 30,
+  "total_pairs": 15,
+  "all_ordered_outputs_equal": true,
+  "all_failed_sources_empty": true,
+  "source_and_code_checkouts_clean": true
+}

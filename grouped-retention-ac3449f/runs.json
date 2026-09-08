@@ -1,0 +1,117 @@
+[
+  {
+    "name": "next-facts-vs-previous",
+    "command": [
+      "/private/tmp/graphify-3353-fix/.venv/bin/python",
+      "/private/tmp/graphify-3353-fix/scripts/benchmark_js_fact_collection.py",
+      "--baseline",
+      "/private/tmp/graphify-3353-previous",
+      "--candidate",
+      "/private/tmp/graphify-3353-fix",
+      "--source",
+      "/private/tmp/graphify-3353-next",
+      "--files",
+      "0",
+      "--runs",
+      "3",
+      "--mode",
+      "facts",
+      "--output",
+      "/private/tmp/graphify-3353-evidence/next-facts-vs-previous.json"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 276.0434012413025
+  },
+  {
+    "name": "next-facts-vs-original",
+    "command": [
+      "/private/tmp/graphify-3353-fix/.venv/bin/python",
+      "/private/tmp/graphify-3353-fix/scripts/benchmark_js_fact_collection.py",
+      "--baseline",
+      "/private/tmp/graphify-3353-original",
+      "--candidate",
+      "/private/tmp/graphify-3353-fix",
+      "--source",
+      "/private/tmp/graphify-3353-next",
+      "--files",
+      "0",
+      "--runs",
+      "3",
+      "--mode",
+      "facts",
+      "--output",
+      "/private/tmp/graphify-3353-evidence/next-facts-vs-original.json"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 302.2823338508606
+  },
+  {
+    "name": "next-graph-vs-original",
+    "command": [
+      "/private/tmp/graphify-3353-fix/.venv/bin/python",
+      "/private/tmp/graphify-3353-fix/scripts/benchmark_js_fact_collection.py",
+      "--baseline",
+      "/private/tmp/graphify-3353-original",
+      "--candidate",
+      "/private/tmp/graphify-3353-fix",
+      "--source",
+      "/private/tmp/graphify-3353-next",
+      "--files",
+      "0",
+      "--runs",
+      "3",
+      "--mode",
+      "graph",
+      "--output",
+      "/private/tmp/graphify-3353-evidence/next-graph-vs-original.json"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 886.7336030006409
+  },
+  {
+    "name": "webpack-facts-vs-original",
+    "command": [
+      "/private/tmp/graphify-3353-fix/.venv/bin/python",
+      "/private/tmp/graphify-3353-fix/scripts/benchmark_js_fact_collection.py",
+      "--baseline",
+      "/private/tmp/graphify-3353-original",
+      "--candidate",
+      "/private/tmp/graphify-3353-fix",
+      "--source",
+      "/private/tmp/graphify-3353-webpack",
+      "--files",
+      "0",
+      "--runs",
+      "3",
+      "--mode",
+      "facts",
+      "--output",
+      "/private/tmp/graphify-3353-evidence/webpack-facts-vs-original.json"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 49.85607409477234
+  },
+  {
+    "name": "webpack-graph-vs-original",
+    "command": [
+      "/private/tmp/graphify-3353-fix/.venv/bin/python",
+      "/private/tmp/graphify-3353-fix/scripts/benchmark_js_fact_collection.py",
+      "--baseline",
+      "/private/tmp/graphify-3353-original",
+      "--candidate",
+      "/private/tmp/graphify-3353-fix",
+      "--source",
+      "/private/tmp/graphify-3353-webpack",
+      "--files",
+      "0",
+      "--runs",
+      "3",
+      "--mode",
+      "graph",
+      "--output",
+      "/private/tmp/graphify-3353-evidence/webpack-graph-vs-original.json"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 193.85984992980957
+  }
+]
